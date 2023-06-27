@@ -22,8 +22,10 @@ use App\Http\Controllers\profileController;
 |
 */
 
-Route::get('/', [depanController::class, "index"]);
-
+Route::get('/portfolio', [depanController::class, "index"]);
+Route::get('/', function () {
+    return view('welcome');
+});
 Route::redirect('home', 'dashboard');
 
 Route::get('/auth', [authController::class, "index"])->name('login')->middleware('guest');
