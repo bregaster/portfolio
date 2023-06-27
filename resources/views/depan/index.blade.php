@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta name="description" content="" />
     <meta name="author" content="" />
-    <title>Resume - Start Bootstrap Theme</title>
+    <title>Resume</title>
     <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
     <!-- Font Awesome icons (free version)-->
     <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
@@ -72,15 +72,15 @@
             <div class="resume-section-content">
                 <h2 class="mb-5">Experience</h2>
                 @foreach ($experience as $item)
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">{{ $item->judul }}</h3>
-                            <div class="subheading mb-3">{{ $item->info1 }}</div>
-                            {!! $item->isi !!}
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">{{ $item->tgl_mulai_indo }} -
-                                {{ $item->tgl_akhir_indo }}</span></div>
+                <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                    <div class="flex-grow-1">
+                        <h3 class="mb-0">{{ $item->judul }}</h3>
+                        <div class="subheading mb-3">{{ $item->info1 }}</div>
+                        {!! $item->isi !!}
                     </div>
+                    <div class="flex-shrink-0"><span class="text-primary">{{ $item->tgl_mulai_indo }} -
+                            {{ $item->tgl_akhir_indo }}</span></div>
+                </div>
                 @endforeach
             </div>
         </section>
@@ -90,16 +90,16 @@
             <div class="resume-section-content">
                 <h2 class="mb-5">Education</h2>
                 @foreach ($education as $item)
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">{{ $item->judul }}</h3>
-                            <div class="subheading mb-3">{{ $item->info1 }}</div>
-                            <div>{{ $item->info2 }}</div>
-                            <p>{{ $item->info3 }}</p>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">{{ $item->tgl_mulai_indo }} -
-                                {{ $item->tgl_akhir_indo }}</span></div>
+                <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                    <div class="flex-grow-1">
+                        <h3 class="mb-0">{{ $item->judul }}</h3>
+                        <div class="subheading mb-3">{{ $item->info1 }}</div>
+                        <div>{{ $item->info2 }}</div>
+                        <p>{{ $item->info3 }}</p>
                     </div>
+                    <div class="flex-shrink-0"><span class="text-primary">{{ $item->tgl_mulai_indo }} -
+                            {{ $item->tgl_akhir_indo }}</span></div>
+                </div>
                 @endforeach
             </div>
         </section>
@@ -111,7 +111,7 @@
                 <div class="subheading mb-3">Programming Languages & Tools</div>
                 <ul class="list-inline dev-icons">
                     @foreach (explode(', ', get_meta_value('_language')) as $item)
-                        <li class="list-inline-item"><i class="devicon-{{ strtolower($item) }}-plain"></i></li>
+                    <li class="list-inline-item"><i class="devicon-{{ strtolower($item) }}-plain"></i></li>
                     @endforeach
                 </ul>
                 <div class="subheading mb-3">Workflow</div>
