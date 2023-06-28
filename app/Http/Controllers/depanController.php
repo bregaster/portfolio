@@ -24,8 +24,6 @@ class depanController extends Controller
 
         return view('depan.index')->with([
             'about' => $about_data,
-            'interest' => $interest_data,
-            'award' => $award_data,
             'experience' => $experience_data,
             'education' => $education_data
         ]);
