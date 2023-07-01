@@ -32,3 +32,12 @@ window.addEventListener('DOMContentLoaded', event => {
     });
 
 });
+
+  if ($('.img-gal').length > 0) {
+    $('.img-gal').magnificPopup({
+      type: 'image',
+      gallery: {
+        enabled: true
+      }
+    });
+  }
