@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta name="description" content="" />
     <meta name="author" content="" />
-    <title>Resume</title>
-    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
+    <title>Portfolio - Bregaster</title>
+    <link rel="shortcut icon" sizes="114x114" href="{{ asset('foto/favicon.png') }}">
     <!-- Font Awesome icons (free version)-->
     <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
     <!-- Google fonts-->
@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
     <!-- aranoz css-->
     <link href="{{ asset('aranoz') }}/css/style.css" rel="stylesheet" />
+    <link href="{{ asset('aranoz') }}/css/magnific-popup.css" rel="stylesheet" />
 
 </head>
 
@@ -1040,11 +1041,14 @@
                                                 </g>
                                             </svg>
                                         </a>
+                                        <br>
+                                        <br>
                                     </div>
 
                                 </div>
                                 <div class="col-md-6">
                                     <div class="single-defination">
+                                        <h4>Features</h4>
                                         <ul class="unordered-list">
                                             <li>Search functionality, features to search for hotels by dates, number of
                                                 guests, and other criteria.</li>
@@ -1061,7 +1065,7 @@
                             </div>
                         </div>
                         <div class="section-top-border">
-                            <h5>Image Gallery</h5>
+                            <h4>Image Gallery</h4>
                             <div class="row gallery-item">
                                 <div class="col-md-4">
                                     <a href="{{ asset('img') }}/hotel/h1.webp" class="img-pop-up img-gal">
@@ -1150,10 +1154,13 @@
                                                 </g>
                                             </svg>
                                         </a>
+                                        <br>
+                                        <br>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="single-defination">
+                                        <h4>Features</h4>
                                         <ul class="unordered-list">
                                             <li>Search functionality, Customers can search for books by title, author,
                                                 genre, or keyword.</li>
@@ -1171,7 +1178,7 @@
                             </div>
                         </div>
                         <div class="section-top-border">
-                            <h3>Image Gallery</h3>
+                            <h4>Image Gallery</h4>
                             <div class="row gallery-item">
                                 <div class="col-md-4">
                                     <a href="{{ asset('img') }}/yukmoco/y1.webp" class="img-pop-up img-gal">
@@ -1260,10 +1267,13 @@
                                                 </g>
                                             </svg>
                                         </a>
+                                        <br>
+                                        <br>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="single-defination">
+                                        <h4>Features</h4>
                                         <ul class="unordered-list">
                                             <li>Master Data, features that serve to input Employee Data and SPPD Data.
                                             </li>
@@ -1279,7 +1289,7 @@
                             </div>
                         </div>
                         <div class="section-top-border">
-                            <h5>Image Gallery</h5>
+                            <h4>Image Gallery</h4>
                             <div class="row gallery-item">
                                 <div class="col-md-4">
                                     <a href="{{ asset('img') }}/mail/m1.webp" class="img-pop-up img-gal">
@@ -1326,6 +1336,7 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
         <script src="{{ asset('depan') }}/js/scripts.js"></script>
+
 </body>
 
 </html>
