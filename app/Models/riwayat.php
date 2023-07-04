@@ -16,13 +16,13 @@ class riwayat extends Model
 
     public function getTglMulaiIndoAttribute()
     {
-        return Carbon::parse($this->attributes['tgl_mulai'])->translatedFormat('d F Y');
+        return Carbon::parse($this->attributes['tgl_mulai'])->translatedFormat('F Y');
     }
 
     public function getTglAkhirIndoAttribute()
     {
         if ($this->attributes['tgl_akhir']) {
-            return Carbon::parse($this->attributes['tgl_akhir'])->translatedFormat('d F Y');
+            return Carbon::parse($this->attributes['tgl_akhir'])->translatedFormat('F Y');
         } else {
             return 'present';
         }
