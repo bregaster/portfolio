@@ -495,9 +495,10 @@ l0 -59 -57 16 c-33 8 -101 16 -158 16 -132 1 -191 -19 -260 -88 -60 -60 -75
                     <div class="p-6">
                         <div class="flex items-center">
                             <div class="ml-4 text-lg leading-7 font-semibold">
-                                <p class="text-gray-900 dark:text-white">
-                                    I'll pretend I didn't enjoy this..
-                                </p>
+                                <div class="text-gray-900 dark:text-white">
+                                    {!!$quote->isi!!}
+                                </div>
+
                             </div>
                         </div>
                     </div>

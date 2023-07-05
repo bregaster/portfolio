@@ -1,10 +1,10 @@
 @extends('dashboard.layout')
 
 @section('konten')
-<div class="pb-3"><a href="{{ route('halaman.index') }}" class="btn btn-secondary">
+<div class="pb-3"><a href="{{ route('quote.index') }}" class="btn btn-secondary">
         << kembali</a>
 </div>
-<form action="{{ route('halaman.update', $data->id) }}" method="POST">
+<form action="{{ route('quote.update', $data->id) }}" method="POST">
     @csrf
     @method('put')
     <div class="mb-3">

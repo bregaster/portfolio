@@ -10,6 +10,7 @@ use App\Http\Controllers\educationController;
 use App\Http\Controllers\experienceController;
 use App\Http\Controllers\pengaturanHalamanController;
 use App\Http\Controllers\profileController;
+use App\Http\Controllers\QuoteController;
 
 /*
 |--------------------------------------------------------------------------
@@ -23,9 +24,7 @@ use App\Http\Controllers\profileController;
 */
 
 Route::get('/portfolio', [depanController::class, "index"]);
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', [depanController::class, "welcome"]);
 Route::redirect('home', 'dashboard');
 
 Route::get('/auth', [authController::class, "index"])->name('login')->middleware('guest');
@@ -41,6 +40,7 @@ Route::prefix('dashboard')->middleware('auth')->group(
         Route::resource('halaman', halamanController::class);
         Route::resource('experience', experienceController::class);
         Route::resource('education', educationController::class);
+        Route::resource('quote', QuoteController::class);
         Route::get('skill', [skillController::class, "index"])->name('skill.index');
         Route::post('skill', [skillController::class, "update"])->name('skill.update');
         Route::get('profile', [profileController::class, "index"])->name('profile.index');

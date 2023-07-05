@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\halaman;
+use App\Models\quote;
 use App\Models\riwayat;
 use Illuminate\Http\Request;
 
@@ -27,5 +28,10 @@ class depanController extends Controller
             'experience' => $experience_data,
             'education' => $education_data
         ]);
+    }
+
+    public function welcome(){
+        $quote = quote::all()->random();
+        return view('welcome')->with(['quote'=> $quote]);
     }
 }
