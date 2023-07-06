@@ -414,7 +414,7 @@
             <div class="flex justify-center pt-8 sm:justify-start sm:pt-0">
                 <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="319.5" height="90.3"
                     viewBox="0 0 1065.000000 301.000000" preserveAspectRatio="xMidYMid meet">
-                    <g transform="translate(0.000000,301.000000) scale(0.100000,-0.100000)" fill="#FFFFFF"
+                    <g transform="translate(0.000000,301.000000) scale(0.100000,-0.100000)" fill="#D22B2B"
                         stroke="none">
                         <path d="M290 2997 c-121 -28 -210 -101 -252 -206 -21 -55 -22 -69 -30 -751
 -9 -728 -3 -1456 12 -1673 13 -180 54 -264 157 -319 87 -47 125 -50 743 -45
@@ -494,8 +494,8 @@ l0 -59 -57 16 c-33 8 -101 16 -158 16 -132 1 -191 -19 -260 -88 -60 -60 -75
                 <div class="grid grid-cols-1 md:grid-cols-2">
                     <div class="p-6">
                         <div class="flex items-center">
-                            <div class="ml-4 text-lg leading-7 font-semibold">
-                                <div class="text-gray-900 dark:text-white">
+                            <div class="ml-4 text-lg leading-7">
+                                <div style="font-family:'Courier New'" class="text-gray-900 dark:text-white">
                                     {!!$quote->isi!!}
                                 </div>
 
