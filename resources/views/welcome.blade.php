@@ -494,8 +494,8 @@
                 <div class="grid grid-cols-1 md:grid-cols-2">
                     <div class="p-6">
                         <div class="flex items-center">
-                            <div class="ml-4 text-lg leading-7 font-semibold">
-                                <div class="text-gray-900 dark:text-white">
+                            <div class="ml-4 text-lg leading-7">
+                                <div style="font-family:'Courier New'" class="text-gray-900 dark:text-white">
                                     {!!$quote->isi!!}
                                 </div>
                             </div>
