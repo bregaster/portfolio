@@ -51,6 +51,7 @@
 
         svg,
         video {
+            fill: #1a202c;
             display: block;
             vertical-align: middle;
         }
@@ -397,6 +398,12 @@
                 color: #6b7280;
                 color: rgba(107, 114, 128, var(--tw-text-opacity));
             }
+
+            svg {
+                fill: #fff;
+                display: block;
+                vertical-align: middle;
+            }
         }
     </style>
 
@@ -414,8 +421,7 @@
             <div style="margin:20px" class="flex justify-center pt-8 sm:justify-start sm:pt-0">
                 <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="319.5" height="90.3"
                     viewBox="0 0 1065.000000 301.000000" preserveAspectRatio="xMidYMid meet">
-                    <g transform="translate(0.000000,301.000000) scale(0.100000,-0.100000)" fill="#D22B2B"
-                        stroke="none">
+                    <g transform="translate(0.000000,301.000000) scale(0.100000,-0.100000)" stroke="none">
                         <path d="M290 2997 c-121 -28 -210 -101 -252 -206 -21 -55 -22 -69 -30 -751
                                 -9 -728 -3 -1456 12 -1673 13 -180 54 -264 157 -319 87 -47 125 -50 743 -45
                                 549 3 579 5 674 26 54 12 137 37 183 56 311 125 546 432 603 787 19 119 8 331
