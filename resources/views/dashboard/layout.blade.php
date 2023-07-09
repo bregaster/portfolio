@@ -124,6 +124,12 @@
                         </a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link" href="{{ route('blog.index') }}">
+                            <i class="mdi mdi-file-document-box-outline menu-icon"></i>
+                            <span class="menu-title">Blog</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="{{ route('pengaturanhalaman.index') }}">
                             <i class="mdi mdi-file-document-box-outline menu-icon"></i>
                             <span class="menu-title">Pengaturan Halaman</span>

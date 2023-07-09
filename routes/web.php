@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\authController;
+use App\Http\Controllers\BlogController;
 use App\Http\Controllers\depanController;
 use Laravel\Socialite\Facades\Socialite;
 use App\Http\Controllers\skillController;
@@ -24,6 +25,8 @@ use App\Http\Controllers\QuoteController;
 */
 
 Route::get('/portfolio', [depanController::class, "index"]);
+Route::get('/blog', [depanController::class, "blog"]);
+Route::get('/blog/{slug}', [BlogController::class, "post"]);
 Route::get('/', [depanController::class, "welcome"]);
 Route::redirect('home', 'dashboard');
 
@@ -41,6 +44,7 @@ Route::prefix('dashboard')->middleware('auth')->group(
         Route::resource('experience', experienceController::class);
         Route::resource('education', educationController::class);
         Route::resource('quote', QuoteController::class);
+        Route::resource('blog', BlogController::class);
         Route::get('skill', [skillController::class, "index"])->name('skill.index');
         Route::post('skill', [skillController::class, "update"])->name('skill.update');
         Route::get('profile', [profileController::class, "index"])->name('profile.index');

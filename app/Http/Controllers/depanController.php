@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\blog;
 use App\Models\halaman;
 use App\Models\quote;
 use App\Models\riwayat;
@@ -34,4 +35,9 @@ class depanController extends Controller
         $quote = quote::all()->random();
         return view('welcome')->with(['quote'=> $quote]);
     }
+    public function blog(){
+        $posts = blog::all();
+        return view('blog.index')->with(['posts'=> $posts]);
+    }
+
 }
