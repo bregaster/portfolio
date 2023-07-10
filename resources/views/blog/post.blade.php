@@ -4,12 +4,12 @@
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
-<html>
+<html lang="en">
 
 <head>
 	<title>{{ $data->judul }} | Bregaster</title>
 	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<link rel="shortcut icon" sizes="114x114" href="{{ asset('foto/favicon.png') }}">
 	<link rel="stylesheet" href="{{ asset('solidstate') }}/assets/css/main.css">
 	<noscript>
