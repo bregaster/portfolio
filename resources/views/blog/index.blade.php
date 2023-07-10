@@ -121,12 +121,12 @@
 						@foreach ($posts as $post)
 						<article>
 							<a href="{{ url('blog', $post->slug) }}" class="image"><img
-									src="{{ asset('solidstate') }}/images/pic04.jpg" alt="" /></a>
+									src="{{ asset('solidstate') }}/images/pic04.webp" alt="" /></a>
 							<a href="{{ url('blog', $post->slug) }}">
 								<h3 class="major">{{$post->judul}}</h3>
 							</a>
 							<p>{{$post->meta}}</p>
-							<a href="{{ url('blog', $post->slug) }}" class="special">Baca</a>
+							<a href="{{ url('blog', $post->slug) }}" class="special ">Baca</a>
 						</article>
 						@endforeach
 					</section>
