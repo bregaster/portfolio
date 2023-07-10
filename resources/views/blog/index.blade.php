@@ -4,12 +4,12 @@
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
-<html>
+<html lang="en">
 
 <head>
 	<title>Blog | Bregaster</title>
 	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<link rel="shortcut icon" sizes="114x114" href="{{ asset('foto/favicon.png') }}">
 	<link rel="stylesheet" href="{{ asset('solidstate') }}/assets/css/main.css">
 	<noscript>
@@ -26,7 +26,7 @@
 		<section id="banner">
 			<div class="inner">
 				<div class="logo">
-					<a href="/">
+					<a href="/" aria-label="Home">
 						<svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="319.5" height="90.3"
 							viewBox="0 0 1065.000000 301.000000" preserveAspectRatio="xMidYMid meet">
 							<g transform="translate(0.000000,301.000000) scale(0.100000,-0.100000)" fill="#fff"
@@ -126,7 +126,7 @@
 								<h3 class="major">{{$post->judul}}</h3>
 							</a>
 							<p>{{$post->meta}}</p>
-							<a href="{{ url('blog', $post->slug) }}" class="special ">Baca</a>
+							<a href="{{ url('blog', $post->slug) }}" aria-label="read post" class="special ">Baca</a>
 						</article>
 						@endforeach
 					</section>
